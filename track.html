@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Machine Management</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1>Indian Railways Track Machine Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#machines">Machines</a></li>
+                <li><a href="#purpose">Purpose</a></li>
+                <li><a href="https://indianrailways.gov.in" target="_blank">More Info</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about" class="content-section">
+        <h2>About Track Machines in Indian Railways</h2>
+        <p>Track machines are essential for maintaining and improving the vast railway network of Indian Railways. These machines are used for track laying, track renewal, track maintenance, and other vital functions to ensure the safe and efficient operation of trains across the country.</p>
+        <img src="https://i.ytimg.com/vi/KuDn-EWuZew/maxresdefault.jpg" alt="Track Machine" class="responsive-img">
+    </section>
+
+    <section id="machines" class="content-section">
+        <h2>Track Machines</h2>
+        <input type="text" id="searchInput" placeholder="Enter Machine Number or Type">
+        <button onclick="searchMachine()">Search</button>
+        <div id="machineDetails" class="machine-details"></div>
+    </section>
+
+    <section id="purpose" class="content-section">
+        <h2>Purpose of the System</h2>
+        <p>The Track Machine Management System is designed to monitor and manage the performance, maintenance, and failures of track machines. This system aims to enhance the efficiency, reliability, and safety of railway operations.</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Indian Railways. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script2.js"></script>
+    <script src="server.js"></script>
+</body>
+</html>
