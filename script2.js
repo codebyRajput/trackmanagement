@@ -1,6 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetchMachines();
+    displayPlaceholder();
 });
+
+function displayPlaceholder() {
+    const machineDetails = document.getElementById('machineDetails');
+    machineDetails.innerHTML = '<p>Search for the device you want to see the details of.</p>';
+}
 
 function fetchMachines() {
     fetch('http://localhost:5500/machines')
@@ -11,7 +16,7 @@ function fetchMachines() {
 function displayMachines(machines) {
     const machineDetails = document.getElementById('machineDetails');
     if (machines.length === 0) {
-        machineDetails.innerHTML = '<p>No machines found.</p>';
+        machineDetails.innerHTML = '<p class="no-results">No machines found.</p>';
         return;
     }
 
